@@ -1,5 +1,5 @@
 /*
-	Directive by HTML5 UP
+	Arcana by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
@@ -9,13 +9,40 @@
 	skel.init({
 		reset: 'full',
 		breakpoints: {
-			global:		{ range: '*', href: 'css/style.css', containers: '51em', grid: { gutters: 30 } },
-			wide:		{ range: '-1680', href: 'css/style-wide.css' },
-			normal:		{ range: '-1280', href: 'css/style-normal.css', containers: '48em' },
-			narrow:		{ range: '-980', href: 'css/style-narrow.css', containers: '95%', grid: { gutters: 30 } },
-			narrower:	{ range: '-840', href: 'css/style-narrower.css', containers: '95%!', grid: { gutters: 20 } },
-			mobile:		{ range: '-736', href: 'css/style-mobile.css', containers: '90%!', grid: { gutters: 20 }, viewport: { scalable: false } },
-			mobilep:	{ range: '-480', href: 'css/style-mobilep.css', containers: '100%!' }
+			global:		{ range: '*', href: 'css/style.css', containers: 1400, grid: { gutters: 50 } },
+			wide:		{ range: '-1680', href: 'css/style-wide.css', containers: 1200, grid: { gutters: 40 } },
+			normal:		{ range: '-1280', href: 'css/style-normal.css', containers: 960, grid: { gutters: 30 }, viewport: { scalable: false } },
+			narrow:		{ range: '-980', href: 'css/style-narrow.css', containers: '95%' },
+			narrower:	{ range: '-840', href: 'css/style-narrower.css', containers: '95%!'},
+			mobile:		{ range: '-736', href: 'css/style-mobile.css', containers: '90%!', grid: { gutters: 20 } },
+			mobilep:	{ range: '-480', href: 'css/style-mobilep.css', containers: '100%' }
+		},
+		plugins: {
+			layers: {
+				config: {
+					mode: 'transform'
+				},
+				navPanel: {
+					animation: 'revealX',
+					breakpoints: 'narrower',
+					clickToHide: true,
+					height: '100%',
+					hidden: true,
+					html: '<div data-action="navList" data-args="nav"></div>',
+					orientation: 'vertical',
+					position: 'top-left',
+					side: 'left',
+					width: 275
+				},
+				titleBar: {
+					breakpoints: 'narrower',
+					height: 44,
+					html: '<span class="toggle" data-action="toggleLayer" data-args="navPanel"></span><span class="title" data-action="copyHTML" data-args="logo"></span>',
+					position: 'top-left',
+					side: 'top',
+					width: '100%'
+				}
+			}
 		}
 	});
 
@@ -47,6 +74,13 @@
 				}
 
 			}
+
+		// Dropdowns.
+			$('#nav > ul').dropotron({
+				offsetY: -15,
+				hoverDelay: 0,
+				alignment: 'center'
+			});
 
 	});
 

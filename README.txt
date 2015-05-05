@@ -1,11 +1,10 @@
-Directive by HTML5 UP
+Arcana by HTML5 UP
 html5up.net | @n33co
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
 
-A simple single pager built around an angular motif (powered by SVG awesomeness).
-Should work great for a landing page. Also includes default styling for a bunch of
-standard page elements (uncomment the huge block of commented-out HTML to see it).
+A business/corporate style responsive site template. It's pretty barebones but should 
+go over pretty well for folks wanting to get their serious business on.
 
 Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
 you can use for pretty much whatever.
@@ -31,4 +30,5 @@ Credits:
 		html5shiv.js (@afarkas @jdalton @jon_neal @rem)
 		CSS3 Pie (css3pie.com)
 		background-size polyfill (github.com/louisremi)
+		jquery.dropotron (n33.co)
 		skel (n33.co)

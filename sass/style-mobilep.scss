@@ -2,44 +2,37 @@
 @import 'mixins';
 
 /*
-	Directive by HTML5 UP
+	Arcana by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Section/Article */
-
-	header {
-		&.major {
-			padding-left: 1em;
-			padding-right: 1em;
-		}
-	}
-
-	footer {
-		&.major {
-			padding-left: 1em;
-			padding-right: 1em;
-		}
-	}
-	
-/* List */
+/* Lists */
 
 	ul {
-		&.icons {
-			li {
-				padding: 0.2em;
-			}
-		}
-			
 		&.actions {
 			li {
 				display: block;
-				padding: 15px 0 0 0;
+				padding: 1.5em 0 0 0;
 		
 				&:first-child {
 					padding: 0;
 				}
+			}
+		}
+	}
+
+/* Icon */
+
+	.icon {
+		&.major {
+			width: 4em;
+			height: 4em;
+			line-height: 4em;
+			box-shadow: 0 0 0 7px white, 0 0 0 8px $color-border;
+			
+			&:before {
+				font-size: 24px;
 			}
 		}
 	}
@@ -50,57 +43,53 @@
 	input[type="reset"],
 	input[type="button"],
 	.button {
-		display: block;
 		width: 100%;
-	}	
-
+		display: block;
+	}
+	
 /* Box */
 
 	.box {
-		padding: 2em 1em;
-	}
-
-/* Feature */
-
-	.feature {
-		margin-bottom: 1em;
-
-		.content {
-			padding: 2em 1em !important;
+		&.highlight {
+			padding-left: calc(4em + 30px);
 		}
-	}
 
-/* Main */
+		&.post {
+			.inner {
+				margin-left: calc(30% + 20px);
+			}
 
-	#main {
-		padding-left: 1em;
-		padding-right: 1em;
-	}
-
-/* Footer */
-
-	#footer {
-		margin-top: -100px;
-		padding-left: 1em;
-		padding-right: 1em;
-		
-		.copyright {
-			li {
-				border: 0;
-				display: block;
-				margin: 0;
-				padding: 0.75em 0 0 0;
+			.image {
+				width: 30%;
 			}
 		}
 	}
+	
+/* Banner */
 
-/* Header */
-
-	#header {
-		padding-left: 2em;
-		padding-right: 2em;
+	#banner {
+		height: 20em;
 		
-		br {
-			display: none;
+		header {
+			padding: 20px;
 		}
+	}
+
+/* Wrapper */
+
+	.wrapper {
+		padding: 2em 20px 1px 20px;
+	}
+
+/* CTA */
+
+	#cta {
+		padding: 20px;
+	}
+	
+/* Footer */
+
+	#footer {
+		padding: 2em 20px;
+		text-align: left;
 	}
